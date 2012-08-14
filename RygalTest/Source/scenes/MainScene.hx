@@ -16,6 +16,7 @@ import tests.audio.TestSound;
 import tests.audio.TestJukebox;
 import tests.graphic.TestAnimatedSprite;
 import tests.graphic.TestAnimation;
+import tests.graphic.TestBitmapFont;
 import tests.util.TestStorage;
 
 /**
@@ -36,6 +37,7 @@ class MainScene extends Scene {
 		runner.add(new TestJukebox());
 		runner.add(new TestAnimatedSprite());
 		runner.add(new TestAnimation());
+		runner.add(new TestBitmapFont());
 		runner.add(new TestStorage());
 		
 		runner.run();
