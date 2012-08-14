@@ -1,4 +1,4 @@
-package tests;
+package tests.util;
 
 import org.rygal.util.Storage;
 import haxe.unit.TestCase;
