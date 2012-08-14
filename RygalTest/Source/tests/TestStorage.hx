@@ -27,7 +27,7 @@ class TestStorage extends TestCase {
 	}
 	
 	public function testCanStorage() {
-		assertTrue(Storage.canStorage());
+		assertTrue(Storage.canStore());
 	}
 	
 	public function testGet() {
@@ -58,6 +58,37 @@ class TestStorage extends TestCase {
 		storage.close();
 		
 		assertEquals(testValue, value);
+	}
+	
+	public function testUnset() {
+		storage = new Storage("TestStorage");
+		storage.put("testunset", 1337);
+		storage.unset("testunset");
+		var value:Bool = storage.isset("testunset");
+		storage.close();
+		
+		assertFalse(value);
+	}
+	
+	public function testClear() {
+		storage = new Storage("TestStorage");
+		storage.put("testclear1", 111);
+		storage.put("testclear2", 222);
+		storage.put("testclear3", 333);
+		storage.put("testclear4", 444);
+		storage.put("testclear5", 555);
+		
+		storage.clear();
+		
+		var value:Bool = storage.isset("testclear1") ||
+						 storage.isset("testclear2") ||
+						 storage.isset("testclear3") ||
+						 storage.isset("testclear4") ||
+						 storage.isset("testclear5");
+		
+		storage.close();
+		
+		assertFalse(value);
 	}
 
 }
