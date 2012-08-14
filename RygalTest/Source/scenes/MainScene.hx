@@ -19,6 +19,8 @@ import tests.graphic.TestAnimation;
 import tests.graphic.TestBitmapFont;
 import tests.graphic.TestCanvas;
 import tests.graphic.TestColor;
+import tests.graphic.TestEmbeddedFont;
+import tests.graphic.TestFont;
 import tests.util.TestStorage;
 
 /**
@@ -42,6 +44,8 @@ class MainScene extends Scene {
 		runner.add(new TestBitmapFont());
 		runner.add(new TestCanvas());
 		runner.add(new TestColor());
+		runner.add(new TestEmbeddedFont());
+		runner.add(new TestFont());
 		runner.add(new TestStorage());
 		
 		runner.run();
