@@ -10,6 +10,7 @@ import org.rygal.Scene;
 
 import haxe.unit.TestRunner;
 
+import tests.TestBasicGameObject;
 import tests.TestStorage;
 
 /**
@@ -24,6 +25,7 @@ class MainScene extends Scene {
 		var runner = new TestRunner();
 		
 		// add tests to runner
+		runner.add(new TestBasicGameObject());
 		runner.add(new TestStorage());
 		
 		
