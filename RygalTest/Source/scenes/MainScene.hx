@@ -15,6 +15,7 @@ import tests.TestGameObjectContainer;
 import tests.audio.TestSound;
 import tests.audio.TestJukebox;
 import tests.graphic.TestAnimatedSprite;
+import tests.graphic.TestAnimation;
 import tests.util.TestStorage;
 
 /**
