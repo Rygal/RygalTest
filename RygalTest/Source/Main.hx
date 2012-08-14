@@ -13,7 +13,7 @@ import org.rygal.Game;
 * @author Christopher Kaster
 */
 
-class RygalTest extends Sprite {
+class Main extends Sprite {
 
 	public function new() {
 		super();
@@ -25,9 +25,7 @@ class RygalTest extends Sprite {
 	}
 
 	private function init(e) {
-		var game:Game = new Game(stage.stageWidth, stage.stageHeight,
-			2, new MainScene());
-		
+		var game:Game = new Game(stage.stageWidth, stage.stageHeight, 1, new MainScene());
 
 		stage.addChild(game.getDisplayObject());
 	}
@@ -37,7 +35,7 @@ class RygalTest extends Sprite {
 		stage.scaleMode = nme.display.StageScaleMode.NO_SCALE;
 		stage.align = nme.display.StageAlign.TOP_LEFT;
 
-		Lib.current.addChild(new RygalTest());
+		Lib.current.addChild(new Main());
 	}
 
 }

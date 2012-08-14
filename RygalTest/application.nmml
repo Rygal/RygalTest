@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
 	
-	<meta title="RygalTest" package="de.kasoki.rygaltest" version="1.0.0" company="University of Applied Science Treves" />
-	<app main="RygalTest" file="RygalTest" path="Export" />
+	<meta title="RygalTest" package="org.rygal.test" version="1.2.0" company="University of Applied Science Treves" />
+	<app main="Main" file="Main" path="Export" />
 	
 	<window width="800" height="600" unless="mobile" />
 	<window fps="30" />
