@@ -12,6 +12,7 @@ import haxe.unit.TestRunner;
 
 import tests.TestBasicGameObject;
 import tests.TestGameObjectContainer;
+import tests.audio.TestSound;
 import tests.util.TestStorage;
 
 /**
@@ -28,8 +29,8 @@ class MainScene extends Scene {
 		// add tests to runner
 		runner.add(new TestBasicGameObject());
 		runner.add(new TestGameObjectContainer());
+		runner.add(new TestSound());
 		runner.add(new TestStorage());
-		
 		
 		runner.run();
 	}
