@@ -18,6 +18,7 @@ import tests.graphic.TestAnimatedSprite;
 import tests.graphic.TestAnimation;
 import tests.graphic.TestBitmapFont;
 import tests.graphic.TestCanvas;
+import tests.graphic.TestColor;
 import tests.util.TestStorage;
 
 /**
@@ -40,6 +41,7 @@ class MainScene extends Scene {
 		runner.add(new TestAnimation());
 		runner.add(new TestBitmapFont());
 		runner.add(new TestCanvas());
+		runner.add(new TestColor());
 		runner.add(new TestStorage());
 		
 		runner.run();
