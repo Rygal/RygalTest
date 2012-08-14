@@ -13,7 +13,7 @@ oW => sprite's original width (only available if trimmed)
 oH => sprite's original height (only available if trimmed)
 r => 'y' only set if sprite is rotated
 -->
-<TextureAtlas imagePath="spritesheet.png" width="54" height="92">
+<TextureAtlas imagePath="textureatlas.png" width="54" height="92">
     <sprite n="character" x="44" y="0" w="10" h="16"/>
     <sprite n="player" x="0" y="0" w="44" h="92"/>
 </TextureAtlas>

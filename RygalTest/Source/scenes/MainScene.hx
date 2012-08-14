@@ -35,6 +35,7 @@ class MainScene extends Scene {
 		runner.add(new TestSound());
 		runner.add(new TestJukebox());
 		runner.add(new TestAnimatedSprite());
+		runner.add(new TestAnimation());
 		runner.add(new TestStorage());
 		
 		runner.run();
