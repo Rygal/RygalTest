@@ -22,6 +22,8 @@ import tests.graphic.TestColor;
 import tests.graphic.TestEmbeddedFont;
 import tests.graphic.TestFont;
 import tests.graphic.TestSprite;
+import tests.graphic.TestSpritesheet;
+
 import tests.util.TestStorage;
 
 /**
@@ -48,6 +50,8 @@ class MainScene extends Scene {
 		runner.add(new TestEmbeddedFont());
 		runner.add(new TestFont());
 		runner.add(new TestSprite());
+		runner.add(new TestSpritesheet());
+		
 		runner.add(new TestStorage());
 		
 		runner.run();
