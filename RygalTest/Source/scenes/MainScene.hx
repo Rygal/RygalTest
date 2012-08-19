@@ -29,7 +29,7 @@ import tests.graphic.TestTextureSequence;
 import tests.graphic.TestTextureSequenceIterator;
 import tests.physics.TestPhysicalWorld;
 import tests.physics.TestRectangle;
-
+import tests.util.TestUtils;
 import tests.util.TestStorage;
 
 /**
@@ -63,7 +63,7 @@ class MainScene extends Scene {
 		runner.add(new TestTextureSequenceIterator());
 		runner.add(new TestPhysicalWorld());
 		runner.add(new TestRectangle());
-		
+		runner.add(new TestUtils());
 		runner.add(new TestStorage());
 		
 		runner.run();
