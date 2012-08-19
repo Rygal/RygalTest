@@ -5,6 +5,9 @@ import nme.events.Event;
 import nme.Lib;
 
 import scenes.MainScene;
+import scenes.TestScene;
+import scenes.InputScene;
+import scenes.GraphicScene;
 
 import org.rygal.Game;
 
@@ -14,6 +17,8 @@ import org.rygal.Game;
 */
 
 class Main extends Sprite {
+
+	public static var ZOOM:Int = 2;
 
 	public function new() {
 		super();
@@ -25,7 +30,12 @@ class Main extends Sprite {
 	}
 
 	private function init(e) {
-		var game:Game = new Game(stage.stageWidth, stage.stageHeight, 1, new MainScene());
+		trace("Rygal version: " + org.rygal.util.Utils.getVersion());
+	
+		var game:Game = new Game(stage.stageWidth, stage.stageHeight, ZOOM, new MainScene(), "main");
+		game.registerScene(new TestScene(), "test");
+		game.registerScene(new InputScene(), "input");
+		game.registerScene(new GraphicScene(), "graphic");
 
 		stage.addChild(game.getDisplayObject());
 	}
