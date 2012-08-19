@@ -18,6 +18,8 @@ import org.rygal.Game;
 
 class Main extends Sprite {
 
+	public static var ZOOM:Int = 2;
+
 	public function new() {
 		super();
 		#if iphone
@@ -28,7 +30,9 @@ class Main extends Sprite {
 	}
 
 	private function init(e) {
-		var game:Game = new Game(stage.stageWidth, stage.stageHeight, 2, new MainScene(), "main");
+		trace("Rygal version: " + org.rygal.util.Utils.getVersion());
+	
+		var game:Game = new Game(stage.stageWidth, stage.stageHeight, ZOOM, new MainScene(), "main");
 		game.registerScene(new TestScene(), "test");
 		game.registerScene(new InputScene(), "input");
 		game.registerScene(new GraphicScene(), "graphic");
