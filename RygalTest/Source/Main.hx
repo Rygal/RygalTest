@@ -5,6 +5,7 @@ import nme.events.Event;
 import nme.Lib;
 
 import scenes.MainScene;
+import scenes.TestScene;
 
 import org.rygal.Game;
 
@@ -25,7 +26,8 @@ class Main extends Sprite {
 	}
 
 	private function init(e) {
-		var game:Game = new Game(stage.stageWidth, stage.stageHeight, 1, new MainScene());
+		var game:Game = new Game(stage.stageWidth, stage.stageHeight, 2, new MainScene(), "main");
+		game.registerScene(new TestScene(), "test");
 
 		stage.addChild(game.getDisplayObject());
 	}
