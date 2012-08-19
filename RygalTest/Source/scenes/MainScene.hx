@@ -25,6 +25,7 @@ import tests.graphic.TestSprite;
 import tests.graphic.TestSpritesheet;
 import tests.graphic.TestTexture;
 import tests.graphic.TestTextureAtlas;
+import tests.graphic.TestTextureSequence;
 
 import tests.util.TestStorage;
 
@@ -55,6 +56,7 @@ class MainScene extends Scene {
 		runner.add(new TestSpritesheet());
 		runner.add(new TestTexture());
 		runner.add(new TestTextureAtlas());
+		runner.add(new TestTextureSequence());
 		
 		runner.add(new TestStorage());
 		

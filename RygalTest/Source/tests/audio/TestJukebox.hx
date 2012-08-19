@@ -26,13 +26,6 @@ class TestJukebox extends TestCase {
 		assertEquals(Jukebox.MODE_RANDOM, jukebox.mode);
 	}
 	
-	/* TODO: implement this when Rygal 1.3 is released
-	public function testAddSound() { 
-		var count:Int = jukebox.getSoundCount();
-		jukebox.addSound(sound1);
-		assertEquals(count + 1, jukebox.getSoundCount());
-	}*/
-	
 	public function testIsRunning() {
 		jukebox.start();
 		var isRunning:Bool = jukebox.isRunning();
@@ -40,17 +33,6 @@ class TestJukebox extends TestCase {
 		
 		assertTrue(isRunning);
 	}
-	
-	/* TODO: implement this when Rygal 1.3 is released
-	public function testNextSound() {
-		jukebox.mode = Jukebox.MODE_LOOP;
-		
-		var current:Int = jukebox.index;
-		jukebox.nextSound();
-		var next:Int = jukebox.index;
-		
-		assertEquals(current, next - 1);
-	}*/
 	
 	public function testStart() {
 		jukebox.start();
