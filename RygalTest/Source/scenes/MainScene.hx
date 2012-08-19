@@ -151,7 +151,7 @@ class MainScene extends Scene {
 		
 		drawRectangle(screen, 20, "Unit tests", "test");
 		drawRectangle(screen, 45, "Input tests", "input");
-		//drawRectangle(screen, 70, "Graphic tests", "graphic");
+		drawRectangle(screen, 70, "Graphic tests", "graphic");
 	}
 	
 	private function drawRectangle(screen:Canvas, y:Int, text:String, scene:String) {
