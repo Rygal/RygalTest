@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
 	
-	<meta title="RygalTest" package="org.rygal.test" version="1.2.0" company="University of Applied Science Treves" />
-	<app main="Main" file="Main" path="Export" />
+	<meta title="RygalTest" package="org.rygal.test" version="1.2.0" company="Rygal" />
+	<app main="Main" file="Main" path="bin" />
 	
 	<window width="800" height="600" unless="mobile" />
 	<window fps="30" />
 
-	<source path="Source" />
+	<source path="src" />
 	
 	<haxelib name="nme" />
 	<haxelib name="rygal" />
 	
-	<assets path="Assets" rename="assets" include="*" exclude="nme.svg" />
+	<assets path="assets" include="*" exclude="nme.svg" />
 	
-	<icon path="Assets/nme.svg" />
+	<icon path="assets/nme.svg" />
 	
 	<ndll name="std" />
 	<ndll name="regexp" />

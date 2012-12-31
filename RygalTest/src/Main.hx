@@ -4,10 +4,7 @@ import nme.display.Sprite;
 import nme.events.Event;
 import nme.Lib;
 
-import scenes.MainScene;
 import scenes.TestScene;
-import scenes.InputScene;
-import scenes.GraphicScene;
 
 import org.rygal.Game;
 
@@ -32,10 +29,7 @@ class Main extends Sprite {
 	private function init(e) {
 		trace("Rygal version: " + org.rygal.util.Utils.getVersion());
 	
-		var game:Game = new Game(stage.stageWidth, stage.stageHeight, ZOOM, new MainScene(), "main");
-		game.registerScene(new TestScene(), "test");
-		game.registerScene(new InputScene(), "input");
-		game.registerScene(new GraphicScene(), "graphic");
+		var game:Game = new Game(stage.stageWidth, stage.stageHeight, ZOOM, new TestScene(), "test");
 
 		stage.addChild(game.getDisplayObject());
 	}
