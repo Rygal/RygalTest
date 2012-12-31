@@ -10,7 +10,7 @@
 	<source path="src" />
 	
 	<haxelib name="nme" />
-	<haxelib name="rygal" />
+	<haxelib name="rygal" /> <!-- haxelib dev rygal /path/to/rygal/dev -->
 	
 	<assets path="assets" include="*" exclude="nme.svg" />
 	

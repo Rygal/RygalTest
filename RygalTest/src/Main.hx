@@ -29,9 +29,11 @@ class Main extends Sprite {
 	private function init(e) {
 		trace("Rygal version: " + org.rygal.util.Utils.getVersion());
 	
-		var game:Game = new Game(stage.stageWidth, stage.stageHeight, ZOOM, new TestScene(), "test");
-
-		stage.addChild(game.getDisplayObject());
+		var game:Game = Game.create(ZOOM);
+		
+		game.registerScene(new TestScene(), "test");
+		
+		game.useScene("test");
 	}
 
 	static public function main() {

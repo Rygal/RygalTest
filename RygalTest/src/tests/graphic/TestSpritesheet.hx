@@ -18,8 +18,8 @@ class TestSpritesheet extends TestCase {
 		texture = Texture.fromAssets("assets/player.png");
 	}
 	
-	public function testFromTileSize() {
-		spritesheet = Spritesheet.fromTileSize(texture, 32, 32);
+	public function testFromSpriteSize() {
+		spritesheet = Spritesheet.fromSpriteSize(texture, 32, 32);
 		
 		var b:Bool = spritesheet.rows > 0 && spritesheet.columns > 0;
 		
@@ -27,7 +27,7 @@ class TestSpritesheet extends TestCase {
 	}
 	
 	public function testGetId() {
-		spritesheet = Spritesheet.fromTileSize(texture, 32, 32);
+		spritesheet = Spritesheet.fromSpriteSize(texture, 32, 32);
 		
 		// get the first element
 		var id:Int = spritesheet.getId(0, 0);
@@ -37,7 +37,7 @@ class TestSpritesheet extends TestCase {
 	}
 	
 	public function testGetTexture() {
-		spritesheet = Spritesheet.fromTileSize(texture, 32, 32);
+		spritesheet = Spritesheet.fromSpriteSize(texture, 32, 32);
 		
 		var t:Texture = spritesheet.getTexture(0, 0);
 		
@@ -45,7 +45,7 @@ class TestSpritesheet extends TestCase {
 	}
 	
 	public function testGetTextureById() {
-		spritesheet = Spritesheet.fromTileSize(texture, 32, 32);
+		spritesheet = Spritesheet.fromSpriteSize(texture, 32, 32);
 		
 		var t:Texture = spritesheet.getTextureById(0);
 		
